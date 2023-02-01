@@ -52,12 +52,12 @@ train_lls, test_lls, train_posteriors, test_posteriors, = \
  ```
  
  ## A note on the data
- The MoSeq dataset is available in combination with the original MoSeq code at [the Datta Lab's website](https://dattalab.github.io/moseq2-website/). Synthetic data can be generated from the T-WARHMM using the sample() function in twarhmm.py.
+ The MoSeq dataset is available in combination with the original MoSeq code at [the Datta Lab's website](https://dattalab.github.io/moseq2-website/). Synthetic data can be generated from the T-WARHMM using the `sample()` function in twarhmm.py.
  
  If you would like to use WARHMM on your own data, we assume loaded data is formatted as follows:
  - train_data (or test_data) is a list of dictionaries of data
- - an entry of train_data is a dictionary of data associated with a specific animal/trial, and contains at least the key 'raw_pcs' which is associated with a numpy array of shape T(ime) x D(imensions)
- - if your data is contained in a single dictionary just wrap it in a list and it should run -- please reach out with any questions
+ - an entry of train_data is a dictionary of data associated with a specific animal/trial, and contains at least the key `raw_pcs` which is associated with a numpy array of shape `T(ime) x D(imensions)`
+ - if your data is contained in a single dictionary just wrap it in a list and it should run &mdash; please reach out with any questions
  
  ## Citation
  ```
