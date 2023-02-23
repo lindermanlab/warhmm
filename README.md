@@ -7,6 +7,7 @@ This repository contains an implementation of different classes of Warped Autore
 data_util.py             Dataset loader + preprocessing functions
 kernels.py               Kernel functions for GP-WARHMM
 plotting_util.py         Assortment of possibly helpful plotting functions
+synthetic_example.ipynb  Notebook showing an example of sampling and fitting
 train.py                 A script for training time-warped ARHMM
 train_gp.py              A script for training GP-warped ARHMM
 twarhmm.py               Time-warped ARHMM model class
@@ -50,6 +51,7 @@ train_lls, test_lls, train_posteriors, test_posteriors, = \
                          test_dataset,
                           num_epochs=10, fit_transitions=True, fit_tau_trans=False, wandb_log=True)
  ```
+ For a full example of sampling and training on data from the T-WARHMM model, please see the notebook [synthetic_example.ipynb](https://github.com/lindermanlab/warhmm/blob/main/synthetic_example.ipynb). 
  
  ## A note on the data
  The MoSeq dataset is available in combination with the original MoSeq code at [the Datta Lab's website](https://dattalab.github.io/moseq2-website/). Synthetic data can be generated from the T-WARHMM using the `sample()` function in twarhmm.py.
